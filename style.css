@@ -175,3 +175,42 @@ body {
 .copyright {
   color: hsl(0, 0%, 59%);
 }
+
+
+@media (min-width: 375px) {
+
+  body {
+    max-width: 1440px;
+    max-height: 900px;
+  }
+  
+  .ping-img {
+    transform: scale(125%);
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .subscribe {
+    font-size: 1.15rem;
+  }
+  
+  .form {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .input-box {
+    max-width: 20rem;
+  }
+
+  .button {
+    width: 10rem;
+  }
+
+  .bottom-img {
+    width: 400px;
+    height: 300px;
+  }
+}
