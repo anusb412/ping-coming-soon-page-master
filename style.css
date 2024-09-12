@@ -1,0 +1,177 @@
+/* IMPORTING FONT
+########################### */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* CSS RESET
+########################### */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* DECLARING VARIABLES
+########################### */
+
+:root {
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-dcyan: hsl(184, 100%, 22%);
+    --clr-vdcyan: hsl(179, 100%, 13%);
+    --clr-white: hsla(0, 0%, 100%, 0.75);
+    --clr-gray: hsl(0, 0%, 95%);
+
+    font-family: "Libre Franklin";
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+}
+
+.ping-img {
+  margin: 0 auto;
+  transform: scale(80%);
+}
+
+.title {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 59%);
+}
+
+.soon-span {
+    font-weight: 600;
+    color: black;
+}
+
+.subscribe {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.input-box {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 5rem;
+    margin-bottom: .5rem;
+    color: hsl(0, 0%, 89%);
+    font-size: .75rem;
+    padding: 1rem;
+    
+}
+
+.button {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 5rem;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-size: .9rem;
+    font-weight: 700;
+
+}
+
+.bottom-img {
+  transform: scale(90%);
+  margin: 5rem auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: blue;
+}
+
+.fab {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 70%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  color: hsl(0, 0%, 59%);
+}
